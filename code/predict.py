@@ -1,30 +1,16 @@
-from pathlib import Path
+import pandas as pd
+from sklearn.model_selection import train_test_split 
 
-import typer
-from loguru import logger
-from tqdm import tqdm
+# Load the test data
+x_test = pd.read_csv("data/processed/x_test.csv", header=None)
+y_test = pd.read_csv("data/processed/y_test.csv", header=None)
 
-from ECG_Heartbeat_Classification.config import MODELS_DIR, PROCESSED_DATA_DIR
+# Check the shape of the loaded data
+print(f"x_test shape: {x_test.shape}")
+print(f"y_test shape: {y_test.shape}")
 
-app = typer.Typer()
+# Split the test set into holdout and validation sets (50-50 split)
+x_val, x_holdout, y_val, y_holdout = train_test_split(x_test, y_test, test_size=0.5, random_state=42)
 
-
-@app.command()
-def main(
-    # ---- REPLACE DEFAULT PATHS AS APPROPRIATE ----
-    features_path: Path = PROCESSED_DATA_DIR / "test_features.csv",
-    model_path: Path = MODELS_DIR / "model.pkl",
-    predictions_path: Path = PROCESSED_DATA_DIR / "test_predictions.csv",
-    # -----------------------------------------
-):
-    # ---- REPLACE THIS WITH YOUR OWN CODE ----
-    logger.info("Performing inference for model...")
-    for i in tqdm(range(10), total=10):
-        if i == 5:
-            logger.info("Something happened for iteration 5.")
-    logger.success("Inference complete.")
-    # -----------------------------------------
-
-
-if __name__ == "__main__":
-    app()
+print(f"Validation set size: {x_val.shape[0]}")
+print(f"Holdout set size: {x_holdout.shape[0]}")

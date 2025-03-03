@@ -23,8 +23,9 @@ To replicate the experiments and run the code, follow the instructions below:
 
 Start by installing the required Python libraries:
 
-bash pip install -r requirements.txt
-
+bash
+   pip install -r requirements.txt
+   
 ### 2. Data Setup
 Once the dependencies are installed, follow the steps below to prepare the data for training:
 
@@ -38,3 +39,5 @@ Once the dependencies are installed, follow the steps below to prepare the data 
 
    ```bash
    python src/preprocessing.py
+
+kllklkl

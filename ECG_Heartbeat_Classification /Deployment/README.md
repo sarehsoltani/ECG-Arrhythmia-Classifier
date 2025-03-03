@@ -1,17 +1,20 @@
 # Deployment Instructions
 
-### Package the App into Docker
+###Creating a Flask API for Inference
+The predict.py script use Flask to expose an API for making predictions. The model will be used to process incoming POST requests and return the predicted class for the given ECG data.
 
-The prediction script has been embedded into a Flask application and packaged into a Docker image. To build the Docker image, run the following command:
+### Containerizing the Flask API
+
+To make the deployment easier and ensure that the environment is consistent across different systems, we can containerize the API using Docker. To build the Docker image, run the following command:
 
 ```bash
-docker build -t heart:v1 .
+docker build -t ecg_model_api .
 ```
 
 ### Run the Docker Container
 Once the Docker image is built, you can run it locally with the following command:
 ```bash
-docker run -it --rm -p 9696:9696 heart:v1
+docker run -p 9696:9696 ecg_model_api
 ```
 This command will start the container and expose it on port 9696. You can access your Flask app at http://localhost:9696.
 
@@ -21,6 +24,10 @@ To use the Flask app for predictions, run the test.py script:
 ```bash
 python test.py
 ```
+
+### Deploying to the Cloud
+Once the model inference pipeline is containerized, it can be deployed to any cloud platform such as AWS, Azure, or Google Cloud. These platforms support easy deployment of Docker containers.
+
 
 # Deployment Strategy for the Trained Model
 

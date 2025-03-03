@@ -15,6 +15,16 @@ The dataset used is the **MIT-BIH Arrhythmia Dataset**, sourced from **Physionet
 
 You can download the dataset from [Kaggle](https://www.kaggle.com/datasets/shayanfazeli/heartbeat?resource=download&select=mitbih_train.csv).
 
+## Running the Code
+
+To replicate the experiments and run the code, follow the instructions below:
+
+### 1. Install Dependencies
+
+Start by installing the required Python libraries:
+
+```bash
+pip install -r requirements.txt
 
 
 ECG Heartbeat Categorization Prediction

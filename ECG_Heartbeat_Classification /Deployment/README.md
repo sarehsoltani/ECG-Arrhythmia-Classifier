@@ -1,7 +1,7 @@
 # Deployment Instructions
 
-###Creating a Flask API for Inference
-The predict.py script use Flask to expose an API for making predictions. The model will be used to process incoming POST requests and return the predicted class for the given ECG data.
+### Creating a Flask API for Inference
+The predict.py script uses Flask to expose an API for making predictions. The model will be used to process incoming POST requests and return the predicted class for the given ECG data.
 
 ### Containerizing the Flask API
 

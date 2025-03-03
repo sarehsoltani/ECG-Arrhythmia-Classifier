@@ -58,3 +58,8 @@ Once the dependencies are installed, follow the steps below to prepare the data 
 -  **Save the Trained Model**: 
    - The final trained model, after optimization and evaluation, is saved in the `/models` directory for future use and deployment.
 
+### 4. Holdout Set Evaluation:
+   Evaluate the model's performance on the holdout set by running the `ECG_Heartbeat_Classification/holdset.ipynb` notebook. This will load the best model, preprocess 
+   the holdout set, and evaluate the model’s metrics.
+
+

@@ -21,8 +21,11 @@ To replicate the experiments and run the code, follow the instructions below:
 
 ### 1. Install Dependencies
 
-Start by installing the required Python libraries: pip install -r requirements.txt
+Start by installing the required Python libraries: 
 
+```bash
+pip install -r requirements.txt
+```
    
 ### 2. Data Setup
 Once the dependencies are installed, follow the steps below to prepare the data for training:

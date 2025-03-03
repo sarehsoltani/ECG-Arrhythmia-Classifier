@@ -23,9 +23,18 @@ To replicate the experiments and run the code, follow the instructions below:
 
 Start by installing the required Python libraries:
 
-```bash
-pip install -r requirements.txt
+bash pip install -r requirements.txt
 
 ### 2. Data Setup
+Once the dependencies are installed, follow the steps below to prepare the data for training:
 
+1. **Download the Dataset**: 
+   - Download the **MIT-BIH Arrhythmia Dataset** from [Kaggle](https://www.kaggle.com/datasets/shayanfazeli/heartbeat?resource=download&select=mitbih_train.csv). 
+   - Ensure the dataset is properly saved in the `/data/raw` directory of this repository.
 
+2. **Data Preprocessing**: 
+   - The dataset needs to be preprocessed before training. This is handled in the `preprocessing.py` script. 
+   - It includes cleaning, segmenting, and normalizing the ECG signals. Simply run the preprocessing script to ensure the data is correctly formatted for model input.
+
+   ```bash
+   python src/preprocessing.py

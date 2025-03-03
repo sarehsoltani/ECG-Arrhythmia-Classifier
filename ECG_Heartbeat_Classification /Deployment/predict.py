@@ -12,6 +12,7 @@ label_to_category = {
     4: 'Fusion beats', 
     5: 'Unknown beats'}
 
+
 app = Flask('predict')
 
 @app.route('/predict', methods=['POST'])

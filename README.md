@@ -71,5 +71,16 @@ The code in [predict.py](https://github.com/sarehsoltani/ECG-Arrhythmia-Classifi
 - **Predictions**: The code takes the input, applies the trained model, decodes the predicted labels, and returns the result in a readable format.
 - **Flexibility**: This pipeline can be extended into a web API for use in production systems.
 
+### 5. Model Inference Pipeline in [predict.py](https://github.com/sarehsoltani/ECG-Arrhythmia-Classifier/blob/master/ECG_Heartbeat_Classification%20/predict.py)
+
+The inference pipeline involves the following steps:
+
+1. **Loading the Trained Model:**
+2. **Prediction Function:**
+   The `predict` function accepts ECG input data, processes it through the trained model, and decodes the prediction back into meaningful classes such as 'Normal beats', 'Supraventricular ectopic beats', etc.
+3. **Decoding the Predicted Label:**
+   The prediction is mapped to the corresponding class using the `label_to_category` dictionary, which stores the relationship between class indices and their respective labels.
+
+
 
 

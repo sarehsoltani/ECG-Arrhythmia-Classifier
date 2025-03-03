@@ -29,7 +29,7 @@ python test.py
 Once the model inference pipeline is containerized, it can be deployed to any cloud platform such as AWS, Azure, or Google Cloud. These platforms support easy deployment of Docker containers.
 
 
-# Deployment Strategy for the Trained Model
+# Deployment Considerations
 
 ## 1. Overview
 

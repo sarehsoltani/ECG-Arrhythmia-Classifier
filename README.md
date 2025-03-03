@@ -26,4 +26,6 @@ Start by installing the required Python libraries:
 ```bash
 pip install -r requirements.txt
 
+### 2. Data Setup
+
 

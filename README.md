@@ -35,6 +35,7 @@ Once the dependencies are installed, follow the steps below to prepare the data 
    - Before training, the dataset must be preprocessed. This is done in the `ECG_Heartbeat_Classification/preprocessing.ipynb` notebook.
    - Run the preprocessing notebook to clean and augment the ECG signals. The processed dataset will then be saved in the `/data/processed` directory, ready for model 
    input.
+   The preprocessed data can also be accessed directly via this [Google Drive link](https://drive.google.com/drive/folders/1n1KG3qWTDousFy8LNICsIoTvNbXvemk_?usp=sharing).
 
 ### 3. **Model, Training, and Hyperparameter Tuning**:
    The `ECG_Heartbeat_Classification/baseline.ipynb` notebook contains the model architecture, training procedure, and hyperparameter tuning.

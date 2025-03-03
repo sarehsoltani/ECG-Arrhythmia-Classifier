@@ -140,17 +140,20 @@ def objective(trial):
         mlflow.log_metric('f1_score', f1)
         mlflow.log_metric('accuracy', accuracy)
         mlflow.log_metric('roc_auc', roc_auc)
-        
+
+        # Save the best model (after training, using the best weights)
+        model.save("/content/drive/MyDrive/ECG Classification/models/baseline_cnn_mitbih_final_model.h5")  # Save the entire model
+
         # Log the model
         mlflow.keras.log_model(model, "model")
-        
+
         # Print evaluation metrics
         print(f"Test Precision: {precision:.4f}")
         print(f"Test Recall: {recall:.4f}")
         print(f"Test F1 Score: {f1:.4f}")
         print(f"Test Accuracy: {accuracy:.4f}")
         print(f"Test AUC-ROC: {roc_auc:.4f}")
-        
+
         # Return the f1 score for optimization
         return f1  # This will be used by Optuna to optimize the model
 

@@ -41,7 +41,7 @@ Once the dependencies are installed, follow the steps below to prepare the data 
    The preprocessed data can also be accessed directly via this [Google Drive link](https://drive.google.com/drive/folders/1n1KG3qWTDousFy8LNICsIoTvNbXvemk_?usp=sharing).
 
 ### 3. **Model, Training, and Hyperparameter Tuning**:
-   The [ECG_Heartbeat_Classification/baseline.ipynb](https://github.com/sarehsoltani/ECG-Arrhythmia-Classifier/blob/master/ECG_Heartbeat_Classification%20/baseline.ipynb)notebook contains the model architecture, training procedure, and hyperparameter tuning.
+   The [ECG_Heartbeat_Classification/baseline.ipynb](https://github.com/sarehsoltani/ECG-Arrhythmia-Classifier/blob/master/ECG_Heartbeat_Classification%20/baseline.ipynb) notebook contains the model architecture, training procedure, and hyperparameter tuning.
    This notebook performs the following tasks:
 
 -  **Load the Preprocessed ECG Data**: 
@@ -63,7 +63,7 @@ Once the dependencies are installed, follow the steps below to prepare the data 
    - The final trained model, after optimization and evaluation, is saved in the `/models` directory for future use and deployment.
 
 ### 4. Holdout Set Evaluation:
-   Evaluate the model's performance on the holdout set by running the [ECG_Heartbeat_Classification/holdset.ipynb](https://github.com/sarehsoltani/ECG-Arrhythmia-Classifier/blob/master/ECG_Heartbeat_Classification%20/holdset.ipynb)notebook. This will load the best model, preprocess 
+   Evaluate the model's performance on the holdout set by running the [ECG_Heartbeat_Classification/holdset.ipynb](https://github.com/sarehsoltani/ECG-Arrhythmia-Classifier/blob/master/ECG_Heartbeat_Classification%20/holdset.ipynb) notebook. This will load the best model, preprocess 
    the holdout set, and evaluate the model’s metrics.
 
 

@@ -66,11 +66,6 @@ Once the dependencies are installed, follow the steps below to prepare the data 
    Evaluate the model's performance on the holdout set by running the [ECG_Heartbeat_Classification/holdset.ipynb](https://github.com/sarehsoltani/ECG-Arrhythmia-Classifier/blob/master/ECG_Heartbeat_Classification%20/holdset.ipynb) notebook. This will load the best model, preprocess 
    the holdout set, and evaluate the model’s metrics.
 
-### 5. Inference pipeline   
-The code in [predict.py](https://github.com/sarehsoltani/ECG-Arrhythmia-Classifier/blob/master/ECG_Heartbeat_Classification%20/predict.py) outlines the inference process for deploying the trained model. It starts by loading the model.
-- **Predictions**: The code takes the input, applies the trained model, decodes the predicted labels, and returns the result in a readable format.
-- **Flexibility**: This pipeline can be extended into a web API for use in production systems.
-
 ### 5. Model Inference Pipeline in [predict.py](https://github.com/sarehsoltani/ECG-Arrhythmia-Classifier/blob/master/ECG_Heartbeat_Classification%20/predict.py)
 
 The inference pipeline involves the following steps:
@@ -81,6 +76,7 @@ The inference pipeline involves the following steps:
 3. **Decoding the Predicted Label:**
    The prediction is mapped to the corresponding class using the `label_to_category` dictionary, which stores the relationship between class indices and their respective labels.
 
+This pipeline can be extended into a web API for use in production systems.
 
 
 

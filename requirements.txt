@@ -4,11 +4,9 @@ scikit-learn
 matplotlib
 requests
 seaborn
-xgboost
 flask
 gunicorn
 streamlit
 mlflow
 optuna
 tensorflow
-

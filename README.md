@@ -35,7 +35,7 @@ Once the dependencies are installed, follow the steps below to prepare the data 
    - Ensure the dataset is properly saved in the `/data/raw` directory of this repository.
 
 2. **Data Preprocessing**: 
-   - Before training, the dataset must be preprocessed. This is done in the `ECG_Heartbeat_Classification/preprocessing.ipynb`notebook.
+   - Before training, the dataset must be preprocessed. This is done in the [ECG_Heartbeat_Classification/preprocessing.ipynb](https://github.com/sarehsoltani/ECG-Arrhythmia-Classifier/blob/master/ECG_Heartbeat_Classification%20/Preprocessing.ipynb) notebook.
    - Run the preprocessing notebook to clean and augment the ECG signals. The processed dataset will then be saved in the `/data/processed` directory, ready for model 
    input.
    The preprocessed data can also be accessed directly via this [Google Drive link](https://drive.google.com/drive/folders/1n1KG3qWTDousFy8LNICsIoTvNbXvemk_?usp=sharing).

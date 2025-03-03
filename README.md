@@ -27,10 +27,6 @@ Start by installing the required Python libraries:
 pip install -r requirements.txt
 
 
-ECG Heartbeat Categorization Prediction
-
-## Project Organization
-
 ```
 ├── LICENSE            <- Open-source license if one is chosen
 ├── Makefile           <- Makefile with convenience commands like `make data` or `make train`

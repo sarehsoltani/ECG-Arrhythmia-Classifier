@@ -40,21 +40,21 @@ Once the dependencies are installed, follow the steps below to prepare the data 
    The `ECG_Heartbeat_Classification/baseline.ipynb` notebook contains the model architecture, training procedure, and hyperparameter tuning.
    This notebook performs the following tasks:
 
-1. **Load the Preprocessed ECG Data**: 
+- 1. **Load the Preprocessed ECG Data**: 
    - The preprocessed ECG data, saved in the `/data/processed` directory, is loaded for training.
 
-2. **Define the CNN Model**: 
+- 2. **Define the CNN Model**: 
    - A Convolutional Neural Network (CNN) model is defined to classify ECG signals into different heartbeat categories.
 
-3. **Train the Model**: 
+- 3. **Train the Model**: 
    - The model is trained using the preprocessed data, and various training strategies (such as dropout and batch normalization) are applied.
 
-4. **Log Results with MLFlow**: 
+- 4. **Log Results with MLFlow**: 
    - During the training process, metrics (precision, recall, F1 score, accuracy, and AUC-ROC) and hyperparameters (learning rate and batch size) are logged to MLFlow for tracking and versioning.
 
-5. **Optimize Hyperparameters using Optuna**: 
+- 5. **Optimize Hyperparameters using Optuna**: 
    - Optuna is used to perform hyperparameter optimization, tuning the model's learning rate and batch size to achieve better performance.
 
-6. **Save the Trained Model**: 
+- 6. **Save the Trained Model**: 
    - The final trained model, after optimization and evaluation, is saved in the `/models` directory for future use and deployment.
 

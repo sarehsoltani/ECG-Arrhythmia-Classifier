@@ -1,0 +1,15 @@
+artifact_uri: /content/drive/MyDrive/ECG Classification/mlruns/520233147491756452/f1c19dbbd41d42c68256bd3c352b3c25/artifacts
+end_time: 1740973406332
+entry_point_name: ''
+experiment_id: '520233147491756452'
+lifecycle_stage: active
+run_id: f1c19dbbd41d42c68256bd3c352b3c25
+run_name: sassy-jay-276
+run_uuid: f1c19dbbd41d42c68256bd3c352b3c25
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740973293791
+status: 3
+tags: []
+user_id: root

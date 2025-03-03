@@ -1,0 +1,15 @@
+artifact_uri: /content/drive/MyDrive/ECG Classification/mlruns/520233147491756452/4cd9ccfbd8b24bf79c52b95f8e0a2100/artifacts
+end_time: 1740971043232
+entry_point_name: ''
+experiment_id: '520233147491756452'
+lifecycle_stage: active
+run_id: 4cd9ccfbd8b24bf79c52b95f8e0a2100
+run_name: silent-yak-106
+run_uuid: 4cd9ccfbd8b24bf79c52b95f8e0a2100
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740970728177
+status: 3
+tags: []
+user_id: root

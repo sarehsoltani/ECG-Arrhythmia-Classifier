@@ -1,0 +1,15 @@
+artifact_uri: /content/drive/MyDrive/ECG Classification/mlruns/520233147491756452/18a644d225f44544a49b2d9ff36440aa/artifacts
+end_time: 1740970425087
+entry_point_name: ''
+experiment_id: '520233147491756452'
+lifecycle_stage: active
+run_id: 18a644d225f44544a49b2d9ff36440aa
+run_name: marvelous-stag-302
+run_uuid: 18a644d225f44544a49b2d9ff36440aa
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740970318838
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,15 @@
+artifact_uri: /content/drive/MyDrive/ECG Classification/mlruns/520233147491756452/baab6d74708443a2a6f432cff333526c/artifacts
+end_time: 1740973745919
+entry_point_name: ''
+experiment_id: '520233147491756452'
+lifecycle_stage: active
+run_id: baab6d74708443a2a6f432cff333526c
+run_name: burly-stag-775
+run_uuid: baab6d74708443a2a6f432cff333526c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740973579778
+status: 3
+tags: []
+user_id: root

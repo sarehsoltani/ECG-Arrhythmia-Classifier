@@ -1,0 +1,15 @@
+artifact_uri: /content/drive/MyDrive/ECG Classification/mlruns/520233147491756452/10d97b6fddd845859d0a5ba6b8445d6c/artifacts
+end_time: 1740973293761
+entry_point_name: ''
+experiment_id: '520233147491756452'
+lifecycle_stage: active
+run_id: 10d97b6fddd845859d0a5ba6b8445d6c
+run_name: shivering-zebra-786
+run_uuid: 10d97b6fddd845859d0a5ba6b8445d6c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740972798531
+status: 3
+tags: []
+user_id: root

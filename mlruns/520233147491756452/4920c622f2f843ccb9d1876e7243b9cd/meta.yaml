@@ -1,0 +1,15 @@
+artifact_uri: /content/drive/MyDrive/ECG Classification/mlruns/520233147491756452/4920c622f2f843ccb9d1876e7243b9cd/artifacts
+end_time: 1740970530793
+entry_point_name: ''
+experiment_id: '520233147491756452'
+lifecycle_stage: active
+run_id: 4920c622f2f843ccb9d1876e7243b9cd
+run_name: likeable-flea-642
+run_uuid: 4920c622f2f843ccb9d1876e7243b9cd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740970425117
+status: 3
+tags: []
+user_id: root

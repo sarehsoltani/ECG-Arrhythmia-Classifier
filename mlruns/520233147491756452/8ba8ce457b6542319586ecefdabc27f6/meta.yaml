@@ -1,0 +1,15 @@
+artifact_uri: /content/drive/MyDrive/ECG Classification/mlruns/520233147491756452/8ba8ce457b6542319586ecefdabc27f6/artifacts
+end_time: 1740973934818
+entry_point_name: ''
+experiment_id: '520233147491756452'
+lifecycle_stage: active
+run_id: 8ba8ce457b6542319586ecefdabc27f6
+run_name: invincible-shad-957
+run_uuid: 8ba8ce457b6542319586ecefdabc27f6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740973745945
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,15 @@
+artifact_uri: /content/drive/MyDrive/ECG Classification/mlruns/520233147491756452/5ae3158c451c4268a89b7b8ea48c0841/artifacts
+end_time: 1740970728149
+entry_point_name: ''
+experiment_id: '520233147491756452'
+lifecycle_stage: active
+run_id: 5ae3158c451c4268a89b7b8ea48c0841
+run_name: mercurial-shoat-207
+run_uuid: 5ae3158c451c4268a89b7b8ea48c0841
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740970530817
+status: 3
+tags: []
+user_id: root

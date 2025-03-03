@@ -1,0 +1,15 @@
+artifact_uri: /content/drive/MyDrive/ECG Classification/mlruns/520233147491756452/b13bb9856f5142249dcae1c1e2c9e6bd/artifacts
+end_time: 1740970318809
+entry_point_name: ''
+experiment_id: '520233147491756452'
+lifecycle_stage: active
+run_id: b13bb9856f5142249dcae1c1e2c9e6bd
+run_name: resilient-mouse-497
+run_uuid: b13bb9856f5142249dcae1c1e2c9e6bd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1740970203390
+status: 3
+tags: []
+user_id: root

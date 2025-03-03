@@ -8,9 +8,16 @@ The prediction script has been embedded into a Flask application and packaged in
 docker build -t heart:v1 .
 ```
 
-###Run the Docker Container
+### Run the Docker Container
 Once the Docker image is built, you can run it locally with the following command:
 ```bash
 docker run -it --rm -p 9696:9696 heart:v1
 ```
 This command will start the container and expose it on port 9696. You can access your Flask app at http://localhost:9696.
+
+### Use the Flask App for Predictions
+To use the Flask app for predictions, run the test.py script:
+
+``bash
+python test.py
+```

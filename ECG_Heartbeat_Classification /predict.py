@@ -1,21 +1,23 @@
 import numpy as np
-from tensorflow.keras.models import load_model 
-from sklearn.preprocessing import MinMaxScaler
+from tensorflow.python.keras.models import load_model
+
 
 # Load the trained model
 model = load_model("models/baseline_cnn_mitbih_final_model.h5")
 
 # Define the mapping for decoding labels to categories
 label_to_category = {
-    1: 'Normal beats', 
-    2: 'Supraventricular ectopic beats', 
-    3: 'Ventricular ectopic beats', 
-    4: 'Fusion beats', 
-    5: 'Unknown beats'}
+    0: 'Normal beats', 
+    1: 'Supraventricular ectopic beats', 
+    2: 'Ventricular ectopic beats', 
+    3: 'Fusion beats', 
+    4: 'Unknown beats'}
 
 def predict(input_data):
     prediction = model.predict(input_data)
+    print(prediction, prediction.shape)
     predicted_class = np.argmax(prediction, axis=-1)
+    print(predicted_class)
     predicted_class = label_to_category[predicted_class[0]]
     return predicted_class
 

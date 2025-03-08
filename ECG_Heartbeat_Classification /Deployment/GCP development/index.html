@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECG Heartbeat Classification</title>
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #121212;
+            color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Container for the entire app */
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Header Styling */
+        h1 {
+            color: #f4f4f4;
+            font-size: 2em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* Form Section Styling */
+        .form-container {
+            margin-bottom: 20px;
+        }
+
+        label {
+            font-size: 1.1em;
+            color: #ccc;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        textarea {
+            width: 97%;
+            height: 160px;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #333;
+            background-color: #222;
+            color: #f4f4f4;
+            transition: all 0.3s ease;
+        }
+
+        textarea:focus {
+            border-color: #4CAF50;
+            background-color: #333;
+        }
+
+        /* Submit Button Styling */
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        /* Result Section Styling */
+        .result-container {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #333;
+            border: 1px solid #444;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        #prediction-result {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #4CAF50;
+            margin-top: 15px;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 15px;
+            background-color: #121212;
+            color: #bbb;
+            font-size: 0.9em;
+        }
+
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>ECG Heartbeat Classifier</h1>
+        <!-- <p style="text-align:center;">Enter ECG data (187 values separated by commas) and get the predicted class.</p> -->
+
+        <!-- Form for entering ECG data -->
+        <div class="form-container">
+            <form id="predict-form">
+                <label for="ecg-data">Enter ECG Data:</label>
+                <textarea id="ecg-data" name="ecg-data" placeholder="Enter ECG data here (187 values separated by commas)" required></textarea><br><br>
+                <button type="submit">Get Prediction</button>
+            </form>
+        </div>
+
+        <!-- Section to display the result -->
+        <div class="result-container">
+            <h3>Result:</h3>
+            <div id="prediction-result">Awaiting input...</div>
+        </div>
+    </div>
+
+    <!-- <footer>
+        <p>&copy; 2025 ECG Heartbeat Classification | All rights reserved. <a href="https://github.com/your-profile">GitHub</a></p>
+    </footer> -->
+
+    <script>
+        // Handle form submission and interact with Flask API
+        document.getElementById('predict-form').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent the default form submission
+
+            // Get ECG data from the input field
+            const ecgData = document.getElementById('ecg-data').value.split(',').map(Number);
+
+            // Send the data as a POST request to the Flask API
+            fetch('http://localhost:9696/predict', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ "sample": ecgData }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Display the prediction result
+                document.getElementById('prediction-result').innerText = 'Predicted Signal Class: ' + data.prediction;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                document.getElementById('prediction-result').innerText = 'An error occurred while making the prediction.';
+            });
+        });
+    </script>
+</body>
+</html>
